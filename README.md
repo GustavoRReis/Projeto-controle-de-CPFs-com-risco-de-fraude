@@ -56,6 +56,7 @@ MYSQL_PORT=3306`
 - Sinta-se a vontade para escolher sua ferramenta para realizar as requisições na API, como, por exemplo, Thunder Client (extensão do VsCode), Postman, Insomnia e etc.
 
 - Utilize o método POST na URL /cpf para cadastrar um novo CPF no banco de dados.
+Os cpf deverá ser informado no body da requisição no formato { "cpf": "64852893055" }
 - Utilize o método GET na URL /cpf para buscar por todos os CPFs no banco de dados.
 - Utilize o método GET na URL /cpf/{cpf} para buscar apenas um único CPF no banco de dados.
 - Utilize o método DELETE na URL /cpf/{cpf} para deletar um CPF no banco de dados.
