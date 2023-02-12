@@ -6,7 +6,6 @@ Este projeto visa realizar o controle de CPFs que apresentem risco de fraude, ad
 
 Na sua máquina você deve ter:
 
- - Sistema Operacional Distribuição Unix
  - Node versão 16
  - Docker
  - Docker-compose versão >=1.29.2
@@ -40,10 +39,16 @@ OBS:(Caso tenha optado por esse método, desconsiderar o Passo 1)
 - Com o projeto em sua máquina local, execute o comando npm install na pasta raiz para instalar as dependências.
 - `npm install`
 ## Passo 4:
+- O projeto tem um arquivo .env.example, que exemplifica as variaveis de ambiente. Crie um arquivo .env na raiz do projeto e preencha da seguinte forma:
+`MYSQL_USER=root
+MYSQL_PASSWORD=password
+MYSQL_HOST=localhost 
+MYSQL_PORT=3306`
+## Passo 5:
 - O projeto utiliza um contêiner docker, execute o comando abaixo para subi-lo na aplicação, certifique-se que as portas usadas pelo contêiner não estão sendo utilizadas, caso contrario, sinta-se a vontade para alteração ou desative outros contêineres.
 - `docker-compose up -d` para subir.
 - `docker logs --tail 1000 -f DB_MAX_MILHAS` para acessar.
-## Passo 5:
+## Passo 6:
 - Agora vamos criar nosso banco de dados, realize o comando a seguir:
 - `npm run db:reset`
 
@@ -59,5 +64,4 @@ OBS:(Caso tenha optado por esse método, desconsiderar o Passo 1)
 ## Executando testes
 - A aplicação conta com testes de integração ja implementados, basta executar o comando `npm run test`
 
-## Considerações Finais
-- Este é um projeto de exemplo, não recomendado para uso em produção sem uma revisão criteriosa e ajustes nas configurações de segurança.
+
