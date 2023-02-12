@@ -33,7 +33,7 @@ Na sua máquina você deve ter:
 OBS:(Caso tenha optado por esse método, desconsiderar o Passo 2) 
 ## Passo 2:
 - Clone este repositório em sua máquina local.
-- Execute um `git clone` na chave SSH em `git@github.com:GustavoRReis/Controle-de-CPFs-com-Risco-de-Fraude.git`
+- Execute um `git clone` na chave SSH em `git@github.com:GustavoRReis/Projeto-controle-de-CPFs-com-risco-de-fraude.git`
 OBS:(Caso tenha optado por esse método, desconsiderar o Passo 1)
 ## Passo 3:
 - Com o projeto em sua máquina local, execute o comando npm install na pasta raiz para instalar as dependências.
